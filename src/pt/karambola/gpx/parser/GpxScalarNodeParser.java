@@ -34,7 +34,9 @@ public abstract class
 GpxScalarNodeParser
 {
 	// 2012-02-25T09:28:45Z
-	protected final static	SimpleDateFormat dateFormat = new SimpleDateFormat( "yyyy-MM-dd'T'kk:mm:ssZ" ) ;
+	// Except it yields parse Exceptions
+	//make Z not the time zone but a character
+	protected final static	SimpleDateFormat dateFormat = new SimpleDateFormat( "yyyy-MM-dd'T'HH:mm:ss'Z'" ) ;
 
     protected
     Double
